@@ -1,14 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>OneStop</title>
-  <base href="/">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  })
+</script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
+    <nav class="red" style="padding: 0px 10px;">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">OneStopSolutions</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Provider:Register Now</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#">provider:Register Now</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
 <body>
+
   <app-root></app-root>
+    
 </body>
 </html>
